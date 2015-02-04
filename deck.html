@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Venator</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="script/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="script/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+
+	<link href='http://fonts.googleapis.com/css?family=Andada&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="header">
+		S/Y  VENATOR  POL – 48
+	</div>
+
+	<div class="col-md-12 main-image" >
+		<a id="image-link" href="image/gallery/deck/00.jpg" target="_blank"><img id="image-preview" src="image/gallery/deck/00.jpg" style="max-height: 600px;"></a>
+	</div>
+
+	<div class="col-md-12 main-field">
+
+		<div class="sub-header">Pokład / Deck</div>
+		
+		<div class="col-md-12 image-row">
+			<div>
+				<img class="preview-link" src="image/gallery/deck/00.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/01.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/02.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/03.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/04.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/05.jpg">
+			</div>
+		</div>
+
+		<div class="col-md-12 image-row">
+			<div>
+				<img class="preview-link" src="image/gallery/deck/06.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/07.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/08.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/09.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/10.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/11.jpg">
+			</div>
+		</div>
+
+		<div class="col-md-12 image-row">
+			<div>
+				<img class="preview-link" src="image/gallery/deck/12.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/13.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/14.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/15.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/16.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/17.jpg">
+			</div>
+		</div>
+
+		<div class="col-md-12 image-row">
+			<div>
+				<img class="preview-link" src="image/gallery/deck/18.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/19.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/20.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/21.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/22.jpg">
+			</div>
+			<div>
+				<img class="preview-link" src="image/gallery/deck/23.jpg">
+			</div>
+		</div>
+		
+
+	</div>
+
+	<script type="text/javascript">
+
+	var lang = 'pol';
+
+	$(".lang").click(function(event) {
+		if(lang == 'pol') {
+			$('.ang').show();
+			$('.pol').hide();
+			lang = 'ang';
+		}
+
+		else {
+			$('.pol').show();
+			$('.ang').hide();
+			lang = 'pol';
+		}
+	});
+
+	$(".preview-link").click(function(event) {
+		$("#image-preview").prop('src', 
+			$(this).prop('src')
+		);
+
+		$("#image-link").prop('href', 
+			$(this).prop('src')
+		);
+	});
+
+	</script>
+
+</body>
+</html>
