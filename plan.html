@@ -12,13 +12,27 @@
 </head>
 <body>
 
-	<div class="header">
+	<div class="header" style="position: relative;">
 		S/Y  VENATOR  POL – 48
 	</div>
 
-	<div class="col-md-12 main-image" >
+  	<div class="button-bar" style="margin-top: 10px;">
+    	<button id="open-tab" style="width: 600px;">Otwórz w nowej zakładce / Open in new tab</button>
+  	</div>
+
+  	<script>
+    	$("#open-tab").click(function () {
+     		$("#image-preview").click();
+    	});
+  	</script>
+
+	<div class="col-md-12 main-image" style="margin-top: 0px;" >
 		<a id="image-link" href="image/gallery/plan/00.jpg" target="_blank"><img id="image-preview" src="image/gallery/plan/00.jpg" style="max-height: 600px;"></a>
 	</div>
+  	<div class="button-bar">
+    	<button class="prev-image">Poprzednie zdjęcie / Previous photo</button>
+    	<button class="next-image">Następne zdjęcie / Next photo</button>
+  	</div>
 
 	<div class="col-md-12 main-field">
 
@@ -61,6 +75,7 @@
 	});
 
 	</script>
+	<script src="script/gallery.js" ></script>
 
 </body>
 </html>

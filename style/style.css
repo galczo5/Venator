@@ -120,6 +120,17 @@ body, html {
 #image-preview {
 	max-width: 100%;
 	max-height: 600px;
+  border: 1px solid #888;
+}
+
+.button-bar {
+  text-align: center;
+  padding: 10px;
+  overflow: auto;
+}
+
+.button-bar button {
+  width: 300px;
 }
 
 @media (max-width: 1200px) {
